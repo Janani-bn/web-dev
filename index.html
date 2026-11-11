@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="cyan">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Janani B N - Computer Science Engineer, ICPC AlgoQueen '26 Finalist, Cloud & Full-Stack Developer based in Chennai, India. Portfolio featuring MATSYA AI, CartZen, and modern interactive web engineering.">
+  <meta name="keywords" content="Janani B N, Computer Science, ICPC AlgoQueen, GSSoC, MATSYA AI, CartZen, FastAPI, React 18, C++, DSA, Cloud Computing, AWS, Chennai">
+  <meta name="author" content="Janani B N">
+  <meta name="theme-color" content="#0a0e17">
+
+  <title>Janani B N | Computer Science Engineer & Developer Portfolio</title>
+
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Janani B N | Computer Science Engineer & Developer">
+  <meta property="og:description" content="Portfolio of Janani B N — ICPC AlgoQueen '26 Finalist, GSSoC '26 Contributor, and creator of MATSYA AI and CartZen.">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Sticky Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Janani B N Home">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span>Janani B N</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#lab" class="nav-link">Interactive Lab</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#timeline" class="nav-link">Experience</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Controls: Theme, Accent, Audio, CTA -->
+      <div class="nav-actions">
+        <!-- Audio FX Toggle -->
+        <button id="audio-toggle-btn" class="icon-btn" aria-label="Toggle Sound Effects" title="Toggle Sound Effects">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+
+        <!-- Accent Color Picker Dropdown -->
+        <div class="accent-dropdown">
+          <button id="accent-dropdown-btn" class="icon-btn" aria-label="Choose Accent Color" title="Theme Accent Colors">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a7 7 0 0 0-7 7c0 2 2 3 2 4.5A2.5 2.5 0 0 1 6.5 16H8"></path>
+            </svg>
+          </button>
+          <div id="accent-menu" class="accent-menu" role="menu">
+            <button class="accent-dot dot-cyan active" data-accent="cyan" aria-label="Cyan Accent" title="Cyan"></button>
+            <button class="accent-dot dot-violet" data-accent="violet" aria-label="Violet Accent" title="Violet"></button>
+            <button class="accent-dot dot-emerald" data-accent="emerald" aria-label="Emerald Accent" title="Emerald"></button>
+            <button class="accent-dot dot-amber" data-accent="amber" aria-label="Amber Accent" title="Amber"></button>
+            <button class="accent-dot dot-rose" data-accent="rose" aria-label="Rose Accent" title="Rose"></button>
+          </div>
+        </div>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Dark and Light Theme" title="Toggle Dark/Light Mode">
+          <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- CTA Button -->
+        <button id="hire-me-btn" class="btn btn-primary btn-sm">Get in Touch</button>
+
+        <!-- Mobile Navigation Hamburger -->
+        <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- ====================================================================
+         Hero Section with Interactive 60fps Neural Particle Canvas
+         ==================================================================== -->
+    <section id="hero" class="hero-section" aria-label="Hero Introduction">
+      <!-- 60FPS Interactive Physics Canvas Background -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-content">
+        <div class="hero-eyebrow">
+          <span class="pulse-dot"></span>
+          <span>Chennai, India • Computer Science & Engineering</span>
+        </div>
+
+        <h1 class="hero-title">
+          Janani B N <br>
+          <span class="gradient-text">Engineering Intelligent Systems</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Computer Science undergraduate at St. Joseph's College of Engineering • ICPC AlgoQueen '26 Finalist • GSSoC '26 Contributor. Developing multi-agent AI architectures, graph-optimized platforms (Dijkstra + TSP), and scalable cloud systems.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#lab" class="btn btn-secondary">
+            <span>Launch Interactive Lab</span>
+          </a>
+        </div>
+
+        <!-- Real Metrics Grid from Resume -->
+        <div class="hero-metrics" id="hero-metrics">
+          <div class="metric-card">
+            <div class="metric-number" data-target="26" data-prefix="'" data-decimals="0">'26</div>
+            <div class="metric-label">ICPC AlgoQueen Finalist</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number" data-target="2026" data-decimals="0">2026</div>
+            <div class="metric-label">GSSoC Contributor</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number" data-target="2" data-suffix="x" data-decimals="0">2x</div>
+            <div class="metric-label">Cloud Certified (OCI & Azure)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number" data-target="2029" data-prefix="'" data-decimals="0">'29</div>
+            <div class="metric-label">St. Joseph's College of Eng.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Interactive Web Dev Lab (Live Sandbox, Color Studio, Physics)
+         ==================================================================== -->
+    <section id="lab" class="section" aria-label="Interactive Web Lab">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-badge">🧪 Real-Time Tech Lab</span>
+          <h2 class="section-title">Interactive <span class="gradient-text">Developer Sandbox</span></h2>
+          <p class="section-desc">
+            Test and manipulate live browser technologies right on this page. Experiment with code rendering, calculate WCAG 2.1 color contrast harmonies, and simulate 2D particle dynamics.
+          </p>
+        </header>
+
+        <div class="lab-container">
+          <!-- Lab Navigation Tabs -->
+          <div class="lab-tabs-nav" role="tablist" aria-label="Interactive Lab Tools">
+            <button class="lab-tab-btn active" role="tab" aria-selected="true" data-tab="sandbox" id="tab-sandbox">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>Live Code Sandbox</span>
+            </button>
+            <button class="lab-tab-btn" role="tab" aria-selected="false" data-tab="palette" id="tab-palette">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a7 7 0 0 0-7 7c0 2 2 3 2 4.5A2.5 2.5 0 0 1 6.5 16H8"></path></svg>
+              <span>Palette & Contrast Studio</span>
+            </button>
+            <button class="lab-tab-btn" role="tab" aria-selected="false" data-tab="physics" id="tab-physics">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="1"></circle><path d="M20.2 20.2a10 10 0 0 0-16.4-16.4"></path><path d="M3.8 20.2a10 10 0 0 0 16.4-16.4"></path></svg>
+              <span>2D Physics Simulator</span>
+            </button>
+          </div>
+
+          <!-- Tab 1: Live Code Sandbox -->
+          <div class="lab-panel active" id="lab-sandbox" role="tabpanel" aria-labelledby="tab-sandbox">
+            <div class="sandbox-toolbar">
+              <div class="preset-selector">
+                <label for="sandbox-preset-select">Preset Snippet:</label>
+                <select id="sandbox-preset-select" class="custom-select">
+                  <option value="dijkstra">Dijkstra Pathfinding (CartZen Engine)</option>
+                  <option value="orb">Neon Orb 3D</option>
+                  <option value="glass">Glassmorphism Card 3D</option>
+                  <option value="cyber">Cyberpunk Button</option>
+                  <option value="matrix">Matrix Digital Rain</option>
+                </select>
+              </div>
+              <div class="sandbox-actions">
+                <button id="sandbox-reset-btn" class="btn btn-secondary btn-sm" title="Reset snippet">Reset</button>
+                <button id="sandbox-copy-btn" class="btn btn-secondary btn-sm" title="Copy snippet">Copy Code</button>
+                <button id="sandbox-run-btn" class="btn btn-primary btn-sm" title="Execute snippet">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>Run Code</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="sandbox-grid">
+              <div class="sandbox-editor-wrapper">
+                <div class="editor-header">
+                  <div class="window-dots">
+                    <span class="window-dot dot-red"></span>
+                    <span class="window-dot dot-yellow"></span>
+                    <span class="window-dot dot-green"></span>
+                  </div>
+                  <span>HTML + CSS + JS Editor</span>
+                  <span>Editable</span>
+                </div>
+                <textarea id="sandbox-textarea" class="sandbox-textarea" spellcheck="false" aria-label="Code Editor"></textarea>
+              </div>
+
+              <div class="sandbox-preview-wrapper">
+                <div class="preview-header">
+                  <div class="window-dots">
+                    <span class="window-dot dot-green"></span>
+                  </div>
+                  <span>Sandboxed Live Output</span>
+                  <span>Instant View</span>
+                </div>
+                <iframe id="sandbox-iframe" class="sandbox-iframe" sandbox="allow-scripts allow-modals" title="Live Code Sandbox Output"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Color Palette & WCAG 2.1 Contrast Studio -->
+          <div class="lab-panel" id="lab-palette" role="tabpanel" aria-labelledby="tab-palette">
+            <div class="palette-toolbar">
+              <div class="color-picker-group">
+                <label for="palette-base-color" style="font-size: 0.9rem; font-weight: 600;">Base Color:</label>
+                <input type="color" id="palette-base-color" class="color-input-native" value="#06b6d4" aria-label="Base Color Input">
+
+                <label for="palette-harmony-select" style="font-size: 0.9rem; font-weight: 600; margin-left: 10px;">Harmony:</label>
+                <select id="palette-harmony-select" class="custom-select">
+                  <option value="analogous">Analogous</option>
+                  <option value="complementary">Complementary</option>
+                  <option value="triadic">Triadic</option>
+                  <option value="monochromatic">Monochromatic</option>
+                </select>
+              </div>
+
+              <div class="sandbox-actions">
+                <button id="palette-randomize-btn" class="btn btn-secondary btn-sm">🎲 Randomize</button>
+                <button id="palette-copy-all-btn" class="btn btn-primary btn-sm">📋 Copy All Colors</button>
+              </div>
+            </div>
+
+            <!-- Dynamic Swatches -->
+            <div class="palette-swatches" id="palette-swatches-container"></div>
+
+            <!-- Real-Time WCAG 2.1 Contrast Matrix -->
+            <div class="contrast-box">
+              <div class="contrast-box-header">
+                <div>
+                  <h3 class="contrast-title">WCAG 2.1 Accessibility & Contrast Checker</h3>
+                  <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+                    Calculates mathematical relative luminance according to W3C standards ($L = 0.2126R + 0.7152G + 0.0722B$).
+                  </p>
+                </div>
+              </div>
+
+              <div class="contrast-preview-grid">
+                <!-- Dark Background Preview -->
+                <div class="contrast-card" id="contrast-preview-dark">
+                  <div>
+                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 6px;">Dark Background Contrast</div>
+                    <div style="font-size: 0.85rem; opacity: 0.85;">Sample body and UI element text rendering on #0F172A.</div>
+                  </div>
+                  <div class="contrast-score-row">
+                    <span class="ratio-badge">--:1</span>
+                    <div class="wcag-badges">
+                      <span class="wcag-pill wcag-aa">AA</span>
+                      <span class="wcag-pill wcag-aaa">AAA</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Light Background Preview -->
+                <div class="contrast-card" id="contrast-preview-light">
+                  <div>
+                    <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 6px;">Light Background Contrast</div>
+                    <div style="font-size: 0.85rem; opacity: 0.85;">Sample body and UI element text rendering on #FFFFFF.</div>
+                  </div>
+                  <div class="contrast-score-row">
+                    <span class="ratio-badge">--:1</span>
+                    <div class="wcag-badges">
+                      <span class="wcag-pill wcag-aa">AA</span>
+                      <span class="wcag-pill wcag-aaa">AAA</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Particle Physics Simulator -->
+          <div class="lab-panel" id="lab-physics" role="tabpanel" aria-labelledby="tab-physics">
+            <div class="physics-controls">
+              <div class="sliders-group">
+                <div class="slider-item">
+                  <label for="physics-gravity">Gravity:</label>
+                  <input type="range" id="physics-gravity" min="-0.5" max="1.5" step="0.05" value="0.35">
+                </div>
+                <div class="slider-item">
+                  <label for="physics-bounce">Bounce:</label>
+                  <input type="range" id="physics-bounce" min="0.2" max="0.95" step="0.05" value="0.75">
+                </div>
+              </div>
+
+              <div class="sandbox-actions">
+                <button id="physics-explode-btn" class="btn btn-secondary btn-sm">💥 Center Blast</button>
+                <button id="physics-clear-btn" class="btn btn-outline btn-sm">Clear Canvas</button>
+              </div>
+            </div>
+
+            <div class="physics-canvas-wrapper">
+              <canvas id="physics-canvas"></canvas>
+              <div class="physics-overlay-hint">
+                🖱️ Click or Drag anywhere to spawn kinetic bouncing particles
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Featured Projects Showcase & Native <dialog> Modal
+         ==================================================================== -->
+    <section id="projects" class="section" aria-label="Featured Projects">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-badge">🚀 Featured Engineering Projects</span>
+          <h2 class="section-title">Architected for <span class="gradient-text">Real-World Impact</span></h2>
+          <p class="section-desc">
+            Production-grade systems demonstrating multi-agent AI orchestration, deterministic marine intelligence pipelines, and graph-theoretic in-store navigation engines.
+          </p>
+        </header>
+
+        <!-- Project Filtering & Real-time Search -->
+        <div class="projects-filter-bar">
+          <div class="filter-pills" role="tablist" aria-label="Project Categories">
+            <button class="filter-pill active" data-filter="all">All Projects</button>
+            <button class="filter-pill" data-filter="opensource">Open Source</button>
+            <button class="filter-pill" data-filter="ai">AI & Multi-Agent Systems</button>
+            <button class="filter-pill" data-filter="fullstack">Full-Stack & Graph Optimization</button>
+          </div>
+
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="project-search-input" class="search-input" placeholder="Search CivicFix, MATSYA AI, CartZen..." aria-label="Search projects">
+          </div>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Native HTML5 <dialog> Modal for Project Architecture Breakdown -->
+    <dialog id="project-modal" class="project-modal" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <div>
+          <span id="modal-category" class="section-badge" style="margin-bottom: 6px;">Category</span>
+          <h3 id="modal-title" class="modal-title">Project Title</h3>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog window">&times;</button>
+      </div>
+      <div class="modal-content">
+        <p id="modal-desc" style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;"></p>
+
+        <!-- Key Metrics Strip -->
+        <div class="modal-metrics-strip" id="modal-metrics"></div>
+
+        <h4 style="font-size: 1.05rem; font-weight: 700; margin-top: 24px; margin-bottom: 10px;">Key Architectural Features</h4>
+        <ul class="modal-feature-list" id="modal-features"></ul>
+
+        <h4 style="font-size: 1.05rem; font-weight: 700; margin-top: 24px; margin-bottom: 12px;">Core Technologies</h4>
+        <div class="tech-tags" id="modal-tags"></div>
+
+        <div id="modal-actions" style="margin-top: 32px; display: flex; gap: 12px; justify-content: flex-end;">
+          <button class="btn btn-secondary btn-sm" onclick="document.getElementById('project-modal').close()">Close Preview</button>
+          <a href="#contact" class="btn btn-primary btn-sm" onclick="document.getElementById('project-modal').close()">Get in Touch</a>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- ====================================================================
+         Skills & Technical Capabilities Matrix
+         ==================================================================== -->
+    <section id="skills" class="section" aria-label="Technical Skills">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-badge">💻 Technical Proficiencies</span>
+          <h2 class="section-title">Core Skills & <span class="gradient-text">Technical Competencies</span></h2>
+          <p class="section-desc">
+            Direct competencies from academic, competitive programming, cloud computing, and real-world system engineering experience.
+          </p>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Core CS & Competitive Programming -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="skill-category-title">Algorithms & C++</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Data Structures & Algorithms (DSA)</span>
+                  <span>96%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="96%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>C++ & Competitive Programming</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Object-Oriented Programming (OOP)</span>
+                  <span>94%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="94%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Graph Theory (Dijkstra, TSP Optimization)</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="92%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: Full-Stack Engineering -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3 class="skill-category-title">Full-Stack Development</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>FastAPI & Python Backend</span>
+                  <span>93%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="93%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>React 18 & Modern JavaScript</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>PostgreSQL & Relational Databases</span>
+                  <span>88%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="88%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>TailwindCSS & Responsive Web Design</span>
+                  <span>94%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="94%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Cloud Computing & DevOps -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+              </div>
+              <h3 class="skill-category-title">Cloud & Infrastructure</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>AWS Services & Amazon EC2 Management</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Oracle Cloud Infrastructure (OCI Certified)</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Microsoft Azure Fundamentals (Certified)</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Git Version Control & Open Source (GSSoC)</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="95%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: AI Systems & Problem Solving -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              </div>
+              <h3 class="skill-category-title">AI & Problem Solving</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Gemini API & Multi-Agent Orchestration</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Rule-Based Routing & Deterministic Pipelines</span>
+                  <span>94%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="94%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Algorithmic Problem Solving</span>
+                  <span>96%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="96%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-item-header">
+                  <span>Quick Learner & Technical Communication</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" data-width="95%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Real Experience & Education Timeline
+         ==================================================================== -->
+    <section id="timeline" class="section" aria-label="Experience and Education Timeline">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-badge">📈 Experience & Education</span>
+          <h2 class="section-title">Academic & <span class="gradient-text">Professional Journey</span></h2>
+          <p class="section-desc">
+            Direct educational milestones, cloud computing internship experience, and competitive achievements from Chennai, India.
+          </p>
+        </header>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-spine"></div>
+
+          <!-- Timeline Item 1: Cloud Computing Intern -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <article class="timeline-card">
+              <span class="timeline-date">June 10, 2026 — June 25, 2026</span>
+              <h3 class="timeline-role">Cloud Computing Intern</h3>
+              <div class="timeline-org">Nexila Technologies • Chennai, India</div>
+              <p class="timeline-desc">
+                Learned the fundamentals of cloud computing using AWS services. Gained hands-on experience launching and managing Amazon EC2 instances, and explored cloud deployment, networking basics, and server management concepts.
+              </p>
+            </article>
+          </div>
+
+          <!-- Timeline Item 2: Bachelor of Computer Science -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <article class="timeline-card">
+              <span class="timeline-date">2025 — Expected 2029</span>
+              <h3 class="timeline-role">Bachelor of Computer Science</h3>
+              <div class="timeline-org">St. Joseph’s College of Engineering • Chennai, India</div>
+              <p class="timeline-desc">
+                Pursuing comprehensive undergraduate engineering in Computer Science. Focusing on Data Structures & Algorithms, C++, Object-Oriented Programming, and full-stack software development.
+              </p>
+            </article>
+          </div>
+
+          <!-- Timeline Item 3: GSSoC 2026 Contributor -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <article class="timeline-card">
+              <span class="timeline-date">2026</span>
+              <h3 class="timeline-role">Open Source Contributor</h3>
+              <div class="timeline-org">GirlScript Summer of Code (GSSoC 2026)</div>
+              <p class="timeline-desc">
+                Selected as an official Contributor for GSSoC 2026. Actively contributing to open-source software and authoring <a href="https://github.com/Janani-bn/CivicFix" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">CivicFix</a>, a civic issue reporting and municipal resolution platform.
+              </p>
+            </article>
+          </div>
+
+          <!-- Timeline Item 4: ICPC AlgoQueen '26 Finalist -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <article class="timeline-card">
+              <span class="timeline-date">2026</span>
+              <h3 class="timeline-role">National Finalist</h3>
+              <div class="timeline-org">ICPC AlgoQueen '26</div>
+              <p class="timeline-desc">
+                Selected as a national finalist in ICPC AlgoQueen '26, demonstrating advanced competitive programming prowess, speed, and algorithmic problem-solving accuracy.
+              </p>
+            </article>
+          </div>
+
+          <!-- Timeline Item 5: High School -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <article class="timeline-card">
+              <span class="timeline-date">2011 — 2025</span>
+              <h3 class="timeline-role">Higher Secondary & High School</h3>
+              <div class="timeline-org">Holy Family Convent Mat. Hr. Sec. School</div>
+              <p class="timeline-desc">
+                Completed secondary and higher secondary school education with academic excellence and strong foundations in mathematics and science.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Real Certifications & Achievements Carousel
+         ==================================================================== -->
+    <section id="achievements" class="section" aria-label="Certifications and Achievements">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-badge">🏆 Credentials & Honors</span>
+          <h2 class="section-title">Certifications & <span class="gradient-text">Achievements</span></h2>
+          <p class="section-desc">
+            Recognitions in competitive programming, open-source development, and cloud computing architectures.
+          </p>
+        </header>
+
+        <div class="testimonials-carousel" aria-roledescription="carousel">
+          <div class="carousel-track" id="carousel-track">
+            <!-- Slide 1: ICPC AlgoQueen -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 of 5">
+              <div class="credential-card">
+                <div class="credential-badge-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                    <path d="M4 22h16"></path>
+                    <path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-2.34"></path>
+                    <path d="M14 14.66V17c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2.34"></path>
+                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                  </svg>
+                </div>
+                <h3 class="credential-title">ICPC AlgoQueen '26 Finalist</h3>
+                <div class="credential-org">International Collegiate Programming Contest (ICPC)</div>
+                <p class="credential-desc">
+                  Selected as a national finalist in ICPC AlgoQueen '26, recognizing excellence in competitive programming, algorithmic analysis, data structures, and optimization.
+                </p>
+                <div class="tech-tags" style="justify-content: center;">
+                  <span class="tech-tag">Competitive Programming</span>
+                  <span class="tech-tag">C++</span>
+                  <span class="tech-tag">DSA</span>
+                  <span class="tech-tag">Problem Solving</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: GSSoC 2026 -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+              <div class="credential-card">
+                <div class="credential-badge-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                  </svg>
+                </div>
+                <h3 class="credential-title">GSSoC 2026 Open Source Contributor</h3>
+                <div class="credential-org">GirlScript Summer of Code 2026</div>
+                <p class="credential-desc">
+                  Selected as an official Contributor for GSSoC 2026. Creator of CivicFix, actively committing to open-source repositories, collaborating with maintainers, and solving real-world civic tech problems.
+                </p>
+                <div class="tech-tags" style="justify-content: center;">
+                  <span class="tech-tag">Open Source</span>
+                  <span class="tech-tag">Git & GitHub</span>
+                  <span class="tech-tag">CivicFix</span>
+                  <span class="tech-tag">GSSoC '26</span>
+                </div>
+                <div style="margin-top: 14px;">
+                  <a href="https://github.com/Janani-bn/CivicFix" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="gap: 6px;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>View CivicFix on GitHub ↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Oracle Cloud OCI -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+              <div class="credential-card">
+                <div class="credential-badge-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                  </svg>
+                </div>
+                <h3 class="credential-title">Oracle Cloud Infrastructure Certified</h3>
+                <div class="credential-org">Oracle Certified Foundations Associate</div>
+                <p class="credential-desc">
+                  Officially certified in Oracle Cloud Infrastructure (OCI) architecture, core cloud services, identity and access management (IAM), virtual cloud networks (VCN), and security standards.
+                </p>
+                <div class="tech-tags" style="justify-content: center;">
+                  <span class="tech-tag">OCI</span>
+                  <span class="tech-tag">Cloud Infrastructure</span>
+                  <span class="tech-tag">Networking & VCN</span>
+                  <span class="tech-tag">Cloud Security</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Microsoft Azure Fundamentals -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+              <div class="credential-card">
+                <div class="credential-badge-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                </div>
+                <h3 class="credential-title">Microsoft Certified: Azure Fundamentals</h3>
+                <div class="credential-org">Microsoft Certified Professional</div>
+                <p class="credential-desc">
+                  Certified in Microsoft Azure core cloud computing principles, virtual machines, cloud storage architectures, networking security, privacy, and compliance.
+                </p>
+                <div class="tech-tags" style="justify-content: center;">
+                  <span class="tech-tag">Microsoft Azure</span>
+                  <span class="tech-tag">Cloud Concepts</span>
+                  <span class="tech-tag">Compute & Storage</span>
+                  <span class="tech-tag">Governance</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5: Technical Writing & Sharing -->
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+              <div class="credential-card">
+                <div class="credential-badge-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                  </svg>
+                </div>
+                <h3 class="credential-title">Technical Writing & Continuous Growth</h3>
+                <div class="credential-org">Medium & Twitter Publisher</div>
+                <p class="credential-desc">
+                  Actively writing on Medium and Twitter, continuously refining technical knowledge, exploring new engineering paradigms, and sharing lessons with the developer community.
+                </p>
+                <div class="tech-tags" style="justify-content: center;">
+                  <span class="tech-tag">Medium</span>
+                  <span class="tech-tag">Twitter</span>
+                  <span class="tech-tag">Technical Writing</span>
+                  <span class="tech-tag">Quick Learner</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button id="carousel-prev-btn" class="icon-btn" aria-label="Previous achievement slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <div class="carousel-dots" id="carousel-dots"></div>
+            <button id="carousel-next-btn" class="icon-btn" aria-label="Next achievement slide">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Real Contact Section & Live Form Validation
+         ==================================================================== -->
+    <section id="contact" class="section" aria-label="Contact Section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-badge">📬 Let's Connect</span>
+          <h2 class="section-title">Get in Touch with <span class="gradient-text">Janani B N</span></h2>
+          <p class="section-desc">
+            Interested in collaborating on software engineering, cloud architecture, or competitive programming? Let's connect.
+          </p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Real Contact Info Panel from Resume -->
+          <div class="contact-info-panel">
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <h3 class="contact-card-title">Phone Number</h3>
+                <p class="contact-card-text">
+                  <a href="tel:+918438037381" style="color: var(--primary); font-weight: 600;">+91 8438037381</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h3 class="contact-card-title">Location</h3>
+                <p class="contact-card-text">Chennai, India</p>
+                <div style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--success); margin-top: 6px; font-weight: 600;">
+                  <span class="pulse-dot" style="width: 6px; height: 6px;"></span> Available for Internships & Projects
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div>
+                <h3 class="contact-card-title">Open Source & Profiles</h3>
+                <p class="contact-card-text" style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px;">
+                  <a href="https://github.com/Janani-bn/CivicFix" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">GitHub: CivicFix ↗</a>
+                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">LinkedIn ↗</a>
+                  <a href="https://medium.com" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">Medium ↗</a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">Twitter ↗</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form with Real-Time Validation -->
+          <div class="contact-form-panel">
+            <form id="contact-form" novalidate aria-label="Contact Message Form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Recruiter or Collaborator" required autocomplete="name">
+                <div id="contact-name-error" class="form-error-msg" role="alert"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="your-email@domain.com" required autocomplete="email">
+                <div id="contact-email-error" class="form-error-msg" role="alert"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Inquiry Subject</label>
+                <select id="contact-subject" class="form-input custom-select">
+                  <option value="internship">Software / Cloud Internship Opportunity</option>
+                  <option value="project">Project Collaboration (MATSYA AI / CartZen)</option>
+                  <option value="competitive">Competitive Programming / ICPC</option>
+                  <option value="other">General Inquiries</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Share your message or inquiry..." required></textarea>
+                <div class="char-counter" id="message-char-count">0 / 500 characters</div>
+                <div id="contact-message-error" class="form-error-msg" role="alert"></div>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Reusable Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <div class="brand-icon" style="width: 28px; height: 28px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        </div>
+        <span style="font-weight: 700; color: var(--text-primary);">Janani B N</span>
+        <span style="color: var(--text-muted);">&copy; 2026. All rights reserved.</span>
+      </div>
+
+      <div class="footer-tech-stack">
+        <span>C++ & DSA</span> •
+        <span>FastAPI & React 18</span> •
+        <span>AWS & Cloud</span> •
+        <span>Zero Dependencies</span>
+      </div>
+
+      <button id="back-to-top-btn" class="btn btn-secondary btn-sm" aria-label="Back to top">
+        <span>Back to Top</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/theme.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/lab.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
